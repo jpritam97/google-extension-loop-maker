@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Auto Clicker Loop",
+  "version": "1.0",
+  "description": "Simple automatic video loop clicker",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["simple-auto-clicker.js"],
+      "css": ["simple-auto-clicker.css"]
+    }
+  ],
+  "action": {
+    "default_title": "Simple Auto Clicker Loop"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["simple-auto-clicker-popup.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 

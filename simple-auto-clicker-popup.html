@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Auto Clicker Loop</title>
+    <style>
+        body {
+            width: 320px;
+            min-height: 280px;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            font-size: 11px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 20px;
+        }
+        .status-section {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #495057;
+        }
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .time-item {
+            flex: 1;
+            text-align: center;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .start-time {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .end-time {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            margin-left: 8px;
+        }
+        .loop-status {
+            text-align: center;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            background: #e2e3e5;
+            color: #6c757d;
+        }
+        .loop-status.active {
+            background: #d4edda;
+            color: #155724;
+        }
+        .instructions {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .instructions h3 {
+            margin: 0 0 10px 0;
+            font-size: 13px;
+            font-weight: 600;
+            color: #495057;
+        }
+        .instructions ol {
+            margin: 0;
+            padding-left: 18px;
+            font-size: 11px;
+            line-height: 1.4;
+            color: #6c757d;
+        }
+        .instructions li {
+            margin-bottom: 6px;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 1px 3px;
+            border-radius: 2px;
+            font-weight: 600;
+            color: #856404;
+        }
+        .refresh-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .refresh-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔄 Simple Auto Clicker</h1>
+        <p>Automatic video & audio loop clicker</p>
+    </div>
+
+    <div class="content">
+        <div class="status-section">
+            <div class="status-title">📊 Current Status</div>
+            <div class="time-display">
+                <div class="time-item start-time" id="startTimeDisplay">
+                    Start: --:--
+                </div>
+                <div class="time-item end-time" id="endTimeDisplay">
+                    End: --:--
+                </div>
+            </div>
+            <div class="loop-status" id="loopStatusDisplay">
+                Loop: OFF
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 How to Use:</h3>
+            <ol>
+                <li>Go to any video or audio page</li>
+                <li>Look for the <span class="highlight">floating control panel</span></li>
+                <li>Click <span class="highlight">"Start"</span> at any time to store start point</li>
+                <li>Click <span class="highlight">"End"</span> at any time to store end point</li>
+                <li>Use <span class="highlight">▶ Resume</span> and <span class="highlight">⏸ Pause</span> buttons</li>
+                <li>When media reaches end time, it automatically jumps to start!</li>
+            </ol>
+            <button class="refresh-btn" id="refreshBtn">🔄 Refresh Status</button>
+        </div>
+    </div>
+
+    <script src="simple-auto-clicker-popup.js"></script>
+</body>
+</html> 

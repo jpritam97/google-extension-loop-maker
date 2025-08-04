@@ -1,0 +1,162 @@
+/* Simple Auto Clicker Styles */
+.simple-auto-clicker {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.control-panel {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 180px;
+}
+
+.drag-handle {
+  width: 100%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px 4px 0 0;
+  cursor: move;
+  margin: -10px -10px 10px -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.drag-dots {
+  cursor: move;
+}
+
+.close-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background: #c82333;
+}
+
+.buttons {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  min-width: 40px;
+  color: white;
+}
+
+.start-btn {
+  background: #4CAF50;
+}
+
+.start-btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+.end-btn {
+  background: #f44336;
+}
+
+.end-btn:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}
+
+.resume-btn {
+  background: #2196F3;
+}
+
+.resume-btn:hover {
+  background: #1976D2;
+  transform: scale(1.05);
+}
+
+.pause-btn {
+  background: #FF9800;
+}
+
+.pause-btn:hover {
+  background: #F57C00;
+  transform: scale(1.05);
+}
+
+.refresh-btn {
+  background: #9C27B0;
+}
+
+.refresh-btn:hover {
+  background: #7B1FA2;
+  transform: scale(1.05);
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.start-time, .end-time {
+  padding: 2px 4px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.loop-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #666;
+}
+
+.loop-indicator {
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+} 
