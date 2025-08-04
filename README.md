@@ -2,6 +2,15 @@
 
 A powerful Chrome extension that automatically loops video and audio content between custom start and end points. Perfect for learning, practicing, or reviewing specific segments of media content.
 
+##ScreenShots
+
+<img width="376" height="198" alt="image" src="https://github.com/user-attachments/assets/b7db0fa8-2998-4e74-bcaa-db3e55f1c5c3" />
+<img width="490" height="200" alt="Screenshot 2025-08-04 110352" src="https://github.com/user-attachments/assets/ffaf2a86-302e-43f4-b1b8-1484fc89af99" />
+<img width="376" height="198" alt="Screenshot 2025-08-04 110443" src="https://github.com/user-attachments/assets/be0ddd02-7178-4123-a7b2-aff36da28d9d" />
+
+
+
+
 ## 🎯 Features
 
 ### Core Functionality
